@@ -1,2 +1,11 @@
-fontawesome icon link 
+fonts :
+google font website
+
+images :
+magnific -> freepik website
+
+templates for websites:
+nicepage website
+
+fontawesome icon link :
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
