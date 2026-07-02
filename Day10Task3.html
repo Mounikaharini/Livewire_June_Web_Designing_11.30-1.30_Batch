@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+        div ul{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        div ul li{
+            list-style-type: none;
+            padding-top: 15px;      
+        }
+        div ul li ul{
+            display: none;
+        }
+        div ul li:hover>ul{
+            /* transition-duration: 2s; */
+            display: block;
+            height: 120px;
+            width: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product
+                <ul>
+                    <li>Mobile</li>
+                    <li>Laptop</li>
+                    <li>PC</li>
+                </ul>
+            </li>
+            <li>Order</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>

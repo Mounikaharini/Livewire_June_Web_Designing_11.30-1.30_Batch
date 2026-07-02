@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 50% ;
+            background-color: rgb(0, 255, 162);
+            animation-name: c3;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            position: absolute;
+            
+        }
+
+        @keyframes c1 {
+            0% {
+                background-color: #c52d2d;
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+                background-color: #870f8b;
+                top: 120px;
+                left: 0px;
+            }
+
+            50% {
+                background-color: rgb(255, 0, 106);
+                top: 120px;
+                left: 120px;
+            }
+
+            75% {
+                background-color: #870f8b;
+                top: 0;
+                left: 120px;
+            }
+
+            100% {
+                background-color: rgb(255, 0, 106);
+                top: 0;
+                left: 0;
+            }
+        }
+
+        @keyframes c2 {
+            0% {
+                background-color: #870f8b;
+                top: 5;
+                left: 0;
+                border-radius: 0;
+            }
+
+            100% {
+                background-color: rgb(255, 0, 106);
+                top: 5;
+                left: 120px;
+                /* border-radius: 50%; */
+                width: 100px;
+                height: 130px;
+                border-radius: 50% / 80px 80px 50px 50px;
+            }
+        }
+
+        @keyframes c3 {
+            0% {
+                background-color: #870f8b;
+                top: 5;
+                left: 0;
+                border-radius: 0;
+                
+            }
+
+            100% {
+                background-color: rgb(255, 0, 106);
+                top: 5;
+                left: 120px;
+                /* border-radius: 50%; */
+                /* width: 100px;
+                height: 130px; */
+                transform: rotateZ(360deg);
+                /* border-radius: 50% / 80px 80px 50px 50px; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>
